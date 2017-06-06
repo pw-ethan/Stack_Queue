@@ -12,6 +12,7 @@
 
 #include <string>
 #include <stack>
+#include <limits.h>
 
 int hanoiRecurision(int num, const std::string &left, const std::string &mid, const std::string &right);
 int processRecurision(int num, const std::string &left, const std::string &mid, const std::string &right, const std::string &from, const std::string &to);

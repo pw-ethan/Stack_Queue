@@ -24,9 +24,8 @@ using namespace std;
 int main() {
 
 	vector<int> v = { 3, 4, 5, 1, 2 };
-
-    Node* head = getMaxTree(v);
-    printTree(head);
+	Node* head = getMaxTree(v);
+	printTree(head);
 
 //	vector<int> nums = { 4, 3, 5, 4, 3, 3, 6, 7 };
 //	vector<int> ret;
