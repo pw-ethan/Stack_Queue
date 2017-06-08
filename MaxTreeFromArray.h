@@ -12,28 +12,28 @@
 
 #include <vector>
 #include <stack>
-#include <map>
+#include <memory>
+#include <unordered_map>
+#include <functional>
 
 
 struct Node
 {
     int value;
-    Node *left;
-    Node *right;
-    Node(int val) : value(val), left(NULL), right(NULL) { }
+    std::shared_ptr<Node> left, right;
+    Node(int val = 0) : value(val), left(nullptr), right(nullptr) { }
 };
 
-struct Cmp
+struct HashNode
 {
-    bool operator()(Node* left, Node* right)
+    int operator() (const std::shared_ptr<Node> &a) const
     {
-        return left->value < right->value;
+        return std::hash<int>()(a->value);
     }
-
 };
 
-Node* getMaxTree(std::vector<int> nums);
-void popStackSetMap(std::stack<Node *> &stk, std::map<Node*, Node*, Cmp> &m);
-void printTree(Node* head);
+std::shared_ptr<Node> getMaxTree(std::vector<int> nums);
+void popStackSetMap(std::stack<std::shared_ptr<Node>> &stk, std::unordered_map<std::shared_ptr<Node> , std::shared_ptr<Node>, HashNode> &m);
+void printTree(std::shared_ptr<Node> head);
 
 #endif // MAXTREEFROMARRAY_H

@@ -25,9 +25,11 @@ int main() {
 
 	vector<int> v = { 3, 4, 5, 1, 2 };
 
-    Node* head = getMaxTree(v);
-    printTree(head);
+// 8. get the MaxTree of array
+//    shared_ptr<Node> head = getMaxTree(v);
+//    printTree(head);
 
+// 7. get a window maximum value array
 //	vector<int> nums = { 4, 3, 5, 4, 3, 3, 6, 7 };
 //	vector<int> ret;
 //	getMaxWindow(nums, ret, 3);
@@ -36,12 +38,12 @@ int main() {
 //	}
 //	cout << endl;
 
-// 用栈解决汉诺塔问题
+// 6. the solution of Hanoi using stack
 //    string left = "left", mid = "mid", right = "right";
 //	cout << "It will move " << hanoiRecurision(2, left, mid, right) << " steps." << endl;
 //	cout << "It will move " << hanoiStack(2, left, mid, right) << " steps." << endl;
 
-// 	用一个栈实现另一栈的排序
+// 5. sort a stack using another stack
 //	stack<int> stk;
 //	for (int num : v) {
 //		stk.push(num);
@@ -62,7 +64,7 @@ int main() {
 //	}
 //	cout << endl;
 
-// 4.猫狗队列
+// 4. cat & dog queue
 //	Pet *dog1 = new Dog();
 //	Pet *dog2 = new Dog();
 //	Pet *cat1 = new Cat();
@@ -80,7 +82,7 @@ int main() {
 //		cout << cdqueue.pollAll()->getPetType() << endl;
 //	}
 
-// 3.如何仅用递归函数和栈操作逆序一个栈
+// 3. reverse a stack only with recursive functions and stack operations
 //	stack<int> stk;
 //	for (int num : v) {
 //		stk.push(num);
@@ -92,7 +94,7 @@ int main() {
 //		stk.pop();
 //	}
 
-// 2.由两个栈组成的队列
+// 2. a queue that is implemented by two stacks
 //	TwoStacksQueue mqueue;
 //	for (int num : v) {
 //		mqueue.add(num);
@@ -108,7 +110,7 @@ int main() {
 //	cout << mqueue.poll() << endl;
 //	cout << mqueue.peek() << endl;
 
-// 1.带有getmin功能的栈
+// 1. a stack with getmin()
 //	MyStackWithGetMin mstack;
 //	cout << "push" << endl;
 //	for (int num : v) {
