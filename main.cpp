@@ -19,12 +19,16 @@
 #include "MaxWindow.h"
 #include "MaxTreeFromArray.h"
 #include "MaxRecSize.h"
+#include "GetNumOfSubarray.h"
 
 using namespace std;
 
 int main() {
 
 	vector<int> v = { 3, 4, 5, 1, 2 };
+
+// 10. the number of subarray, which the max - min <= num
+    cout << getNumOfSubarray(v, 3) << endl;
 
 // 9. find the size of the maximum submatrix
 //	vector<int> va = {0, 1, 1, 1};
