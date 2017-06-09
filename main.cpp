@@ -24,15 +24,10 @@ using namespace std;
 int main() {
 
 	vector<int> v = { 3, 4, 5, 1, 2 };
-<<<<<<< HEAD
 
 // 8. get the MaxTree of array
-//    shared_ptr<Node> head = getMaxTree(v);
-//    printTree(head);
-=======
-	Node* head = getMaxTree(v);
-	printTree(head);
->>>>>>> b6f646b24ad0ba391c49391e7eb0198cc56fb771
+    shared_ptr<Node> head = getMaxTree(v);
+    printTree(head);
 
 // 7. get a window maximum value array
 //	vector<int> nums = { 4, 3, 5, 4, 3, 3, 6, 7 };
