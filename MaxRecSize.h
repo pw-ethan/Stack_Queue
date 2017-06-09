@@ -3,8 +3,8 @@
 
 #include <vector>
 
-int getMaxRecSize(std::vector<std::vector<int>> m);
-int getMaxRecFromBottom(std::vector<int> height);
+int getMaxRecSize(const std::vector<std::vector<int>> &m);
+int getMaxRecFromBottom(const std::vector<int> &height);
 
 
 #endif // MAXRECSIZE_H

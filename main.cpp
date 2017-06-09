@@ -18,6 +18,7 @@
 #include "Hanoi.h"
 #include "MaxWindow.h"
 #include "MaxTreeFromArray.h"
+#include "MaxRecSize.h"
 
 using namespace std;
 
@@ -25,9 +26,19 @@ int main() {
 
 	vector<int> v = { 3, 4, 5, 1, 2 };
 
+// 9. find the size of the maximum submatrix
+//	vector<int> va = {0, 1, 1, 1};
+//	vector<int> vb = {1, 1, 1, 1};
+//	vector<int> vc = {1, 1, 1, 1};
+//	vector<vector<int>> m;
+//	m.push_back(va);
+//	m.push_back(vb);
+//	m.push_back(vc);
+//    cout << getMaxRecSize(m) << endl;
+
 // 8. get the MaxTree of array
-    shared_ptr<Node> head = getMaxTree(v);
-    printTree(head);
+//    shared_ptr<Node> head = getMaxTree(v);
+//    printTree(head);
 
 // 7. get a window maximum value array
 //	vector<int> nums = { 4, 3, 5, 4, 3, 3, 6, 7 };
