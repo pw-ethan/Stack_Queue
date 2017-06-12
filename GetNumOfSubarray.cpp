@@ -7,8 +7,8 @@ int getNumOfSubarray(std::vector<int> arr, int num) {
     if(arr.empty()) {
         return 0;
     }
-    std::deque<int> qmin;
-    std::deque<int> qmax;
+    std::deque<int> qmin; // it's front is min
+    std::deque<int> qmax; // it's front is max
     int i = 0, j = 0;
     int ret = 0;
     while (i < arr.size()) {
